@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task_26</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"
+        integrity="sha256-0YPKAwZP7Mp3ALMRVB2i8GXeEndvCq3eSl/WsAl1Ryk=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.js"></script>
+    <script src="https://underscorejs.org/underscore-min.js"></script>
+</head>
+
+<body>
+    <div class="mainContainer">
+        <form id="dataInput" method="GET" autocomplete="off">
+            <label for="brandInput">
+                <p>Insert a vehicle Brand</p>
+            </label>
+            <input id="brandInput" name="brandInput" value="Ford" autofocus>
+            <label for="modelInput">
+                <p>Insert a vehicle Model</p>
+            </label>
+            <input id="modelInput" name="modelInput" value="Mustang">
+            <label for="productionYearInput">
+                <p>Insert a vehicle production year</p>
+            </label>
+            <input id="productionYearInput" name="productionYearInput" value="1969" type='number'>
+            <p id="ErrorInput">Fill the year in a range from 1900 to 2021</p>
+        </form>
+
+        <div class="defaultContainer">
+            <button id="buttonSendForm" class="button" onclick="generateTable()">Default View / Show Table</button>
+        </div>
+
+        <div class="invertedContainer">
+            <button id="buttonSendForm" class="button" onclick="invertCellsData()">Invert Cells</button>
+        </div>
+
+        <div class="pickedContainer">
+            <button id="buttonSendForm" class="button" onclick="generatePickTable()">Pick Table</button>
+        </div>
+
+        <div class="omitContainer">
+            <button id="buttonSendForm" class="button" onclick="generateOmitTable()">Omit Table</button>
+        </div>
+
+
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

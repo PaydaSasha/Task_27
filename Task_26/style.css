@@ -1,0 +1,88 @@
+.mainContainer {
+    width: 305px;
+    height: 350px;
+    transform: translate(-50%);
+    margin-left: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: auto;
+    margin: 50px auto;
+
+}
+
+input {
+    margin-top: 5px;
+    width: 300px;
+    border: 2px solid lightgrey;
+    border-radius: 5px;
+    outline: none;
+    color: grey;
+    text-align: center;
+    background-color: beige;
+    transition: background-color 0.5s, color 0.5s
+}
+
+input:active {
+    font-weight: bold;
+    background-color: #efefc8;
+}
+
+.button {
+    width: 200px;
+    background-color: beige;
+    border: 2px solid grey;
+    border-radius: 5px;
+    color: grey;
+    outline: none;
+    transition: transform 0.2s, box-shadow 0.2s;
+    align-self: center;
+    margin-top: 20px;
+}
+
+
+p {
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    margin-left: 50%;
+    transform: translate(-50%);
+    white-space: nowrap;
+    color: grey;
+}
+
+table {
+    border: 2px solid grey;
+    color: grey;
+    background-color: beige;
+    border-collapse: collapse;
+    margin: 20px auto;
+}
+
+thead {
+    font-weight: bold;
+    background-color: #efefc8;
+}
+
+table td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid grey;
+    box-shadow: inset 0px 0px 7px 0px grey;
+
+}
+
+#ErrorInput {
+    text-align: center;
+    color: lightcoral;
+    display: none;
+    margin-left: 0;
+    transform: none;
+}
